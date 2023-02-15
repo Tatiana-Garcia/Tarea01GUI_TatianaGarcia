@@ -2,9 +2,12 @@
 package tarea10_tatianagarcia;
 
 import java.awt.Color;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Carro {
+    DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
     private String marca;
     private String modelo;
     private Calendar fecha;
@@ -84,7 +87,7 @@ public class Carro {
 
     @Override
     public String toString() {
-        return "Carro{" + "marca=" + marca + ", modelo=" + modelo + ", fecha=" + fecha + ", color=" + color + ", millas=" + millas + ", tipo=" + tipo + ", camara=" + camara + '}';
+        return "Carro{" + "marca=" + marca + ", modelo=" + modelo + ", fecha=" + df.format(fecha) + ", color=" + color + ", millas=" + millas + ", tipo=" + tipo + ", camara=" + camara + '}';
     }
     
 }

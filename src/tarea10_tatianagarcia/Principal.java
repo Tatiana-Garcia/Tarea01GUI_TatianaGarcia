@@ -5,6 +5,8 @@
 package tarea10_tatianagarcia;
 
 import java.awt.Color;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import javax.swing.DefaultComboBoxModel;
@@ -18,6 +20,7 @@ import javax.swing.table.DefaultTableModel;
  * @author tatig
  */
 public class Principal extends javax.swing.JFrame {
+    DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
 
     int xMouse, yMouse;
     Color c;
